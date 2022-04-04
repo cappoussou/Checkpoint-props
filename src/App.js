@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/Profile';
+import ala from './ala.jpg'
 
 function App() {
+  const handleName =(name)=> {alert(`Hi i´m ${name}`)}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+  
+    <div>
+        <Profile
+         fullName="Ala" 
+         bio="This is my bio"
+         profession="Student"
+         handleName={handleName}
         >
-          Learn React
-        </a>
-      </header>
+        <img style={{width: 200, height: 200, borderRadius: 200/ 4 , display: 'flex' , justifyContent: 'center'}}  src={ala} alt="image" ></img>
+        </Profile>
     </div>
+    
   );
 }
 
