@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from "prop-types";
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Profile(props) {
   const {fullName,bio,profession,handleName,children} =props
   return (
   <div>
-  <h1 style={{color: "red", textAlign:"center"}}> {fullName}</h1>
+  <h1 style = {{color: "white",textAlign:"center", backgroundColor: "DodgerBlue",padding: "10px",fontFamily: "Arial"}} >{fullName}</h1>
   <h2 style={{color: "Black", textAlign:"center"}}>{bio}</h2>
   <h3 style={{color: "Black", textAlign:"center"}}>{profession}</h3>
   {children}
-  <button onClick={()=>handleName(fullName)} >Button</button>
+  <center>
+  <Button variant="primary" style={{marginTop: "10px"}} onClick={()=>handleName(fullName)} >Click Me</Button>
+  </center>
   </div>
   );
 

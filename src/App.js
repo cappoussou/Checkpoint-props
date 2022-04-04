@@ -13,7 +13,9 @@ function App() {
          profession="Student"
          handleName={handleName}
         >
-        <img style={{width: 200, height: 200, borderRadius: 200/ 4 , display: 'flex' , justifyContent: 'center'}}  src={ala} alt="image" ></img>
+          <center>
+        <img style={{width: 200, height: 200, borderRadius: 200/ 4 }}  src={ala} alt="image" ></img>
+        </center>
         </Profile>
     </div>
     
